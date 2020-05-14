@@ -9,6 +9,13 @@ function ajaxCall() {
     });
 }
 
+function showArticleOfTheDay() {
+    $('#searchResults').empty();
+    $('#search').empty();   
+    $('iframe').attr('src', 'https://en.wikipedia.org/wiki/Special:Random');
+}
+
+
 function output(query, total) {
     $('#searchResults').append(
         `<div class="col-sm-12 col-lg-8 pt-2 text-center">
@@ -41,5 +48,13 @@ $(document).ready(function() {
     $('#search').on('keyup', function() {
         $('#searchResults').empty();
         ajaxCall();
+        $('iframe').attr('src', '');
+    });
+
+
+    //Article of the day
+    $('#articleBtn').on('click', function() {
+        showArticleOfTheDay();
+        $(this).text("Show Another Article Of The Day");
     });
 });
