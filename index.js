@@ -23,7 +23,7 @@ function output(query, total) {
                     <div class="card-body">
                         <div class="card-title pt-1">
                             <h2 class="main-title">
-                                <a href="" class="card-title-url"> ${query[item].title}</a>
+                                <a href="https://en.wikipedia.org/wiki/${query[item].title}" class="card-title-url" target="_blank"> ${query[item].title}</a>
                             </h2>
                         </div>
                         <div class="card-desc text-muted">${query[item].snippet}</div>
