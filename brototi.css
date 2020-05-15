@@ -69,18 +69,10 @@ a:hover {
 /**
  * Footer
  */
-footer {
-    position: relative;
-    margin-top: 5rem;
-}
 #footer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
     background-color: #ece6e1;
 }
 #footer > p {
-    
     margin-bottom: 0;
 }
 #footer > p > a{
