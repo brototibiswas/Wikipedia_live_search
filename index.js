@@ -4,6 +4,7 @@ function ajaxCall() {
         dataType : 'jsonp',
         type : 'GET',
         success : function(data) {
+            console.log($('#search').val())
             output(data.query.search, data.query.searchinfo.totalhits)
         }
     });
@@ -12,6 +13,7 @@ function ajaxCall() {
 function showArticleOfTheDay() {
     $('#searchResults').empty();
     $('#search').empty();   
+    $('#articleFrame').removeClass('hide');
     $('iframe').attr('src', 'https://en.wikipedia.org/wiki/Special:Random');
 }
 
@@ -44,6 +46,7 @@ function output(query, total) {
 $(document).ready(function() {
     $('#search').focus();
     $('#search').off('keyup');
+    $('#articleFrame').addClass('hide');
 
     $('#search').on('keyup', function() {
         $('#searchResults').empty();

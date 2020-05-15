@@ -1,3 +1,6 @@
+.hide {
+    display: none;
+}
 .container-fluid {
     background-color: #faf9f9;
     padding-left: 0;
