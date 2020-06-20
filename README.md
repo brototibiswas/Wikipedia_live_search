@@ -1,5 +1,4 @@
 # Cafe Wiki
-*In progress/Will be adding React*
 
 A Wikipedia Live Search website. Made using JQuery. 
 
